@@ -4,17 +4,17 @@
 
 * ターゲット直接指定
 ```powershell
-forti_config_backup -l 192.0.2.1,user,password
+forti_backup -l 192.0.2.1,user,password
 ```
 
 * tac reportも取得
 ```powershell
-forti_config_backup -l 192.0.2.1,user,password
+forti_backup -l 192.0.2.1,user,password
 ```
 
 * ターゲット複数指定（CSV）
 ```powershell
-forti_config_backup -f target.csv
+forti_backup -f target.csv
 ```
 
 target csv format is "<fortigate addr>,<username>,<passwod>
@@ -30,7 +30,7 @@ e.g.)
 
 DOSコマンドプロンプトでsymlink作成（Powershellでのsymlnk作成がいまひとつ分からなかった・・・）
 ```dos
-mklink C:\opt\bin\forti_config_backup.exe C:\opt\appz\forti_config_backup\forti_config_backup.exe
+mklink C:\opt\bin\forti_backup.exe C:\opt\appz\forti-backup\forti_backup.exe
 ```
 
 PATHが通ってなければ`c:\opt\bin`をPATHに追加

@@ -5,8 +5,8 @@ python -m nuitka `
   --standalone `
   --follow-imports `
   --enable-console `
-  --output-filename=forti_config_backup `
+  --output-filename=forti_backup `
   --force-stderr-spec="{PROGRAM_BASE}.err.log" `
-  --windows-icon-from-ico=./icon/forti_config_backup/favicon.ico `
-  .\booya\forti_config_backup.py
+  --windows-icon-from-ico=./icon/forti=backup/favicon.ico `
+  .\booya\forti_backup.py
 ```
